@@ -4,9 +4,13 @@ CREATE DATABASE burgers_db;
 
 USE burgers_db;
 
+DROP DATABASE IF EXISTS burgers_db;
+USE burgers_db;
+
 CREATE TABLE burgers (
-  id int NOT NULL AUTO_INCREMENT,
-burger_name varchar(255) NOT NULL,
+  id INT (10) AUTO_INCREMENT NOT NULL,
+burger_name varchar(100) NOT NULL,
 devoured BOOLEAN,
+date TIMESTAMP,
   PRIMARY KEY (id)
 );
